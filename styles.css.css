@@ -1,0 +1,65 @@
+/* General Styles */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 95%; /* Slight padding on the sides */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section {
+    background-color: #63d376;
+    padding: 40px 20px 20px; /* Extra padding at the top to prevent overlap */
+    border: 1px solid black;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Title Styling */
+.title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e7c32f;
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+/* Desktop View */
+@media (min-width: 992px) {
+    .section {
+        width: 32%;
+        margin: 0;
+    }
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 48%;
+        margin-bottom: 10px;
+    }
+
+    .section:nth-child(3) {
+        width: 100%;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
